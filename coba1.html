@@ -1,0 +1,96 @@
+<script>
+	var x = 5;
+	var nama = "Irdho\n\n";
+
+	document.write(nama);
+
+
+	var y = 10;
+	z = x + y;
+
+	//alert(z);
+
+	document.write(z);
+	if (x > y) {
+		alert('x lebih besar dari y\n');
+	}else{
+		alert('y lebih besar dari pada x \n');
+	}
+
+	var nilai = 76;
+
+	if (nilai >= 76) {
+		document.write('\nNilai A ');
+	}else if (nilai >= 70 && nilai < 80)
+	{
+		document.write('Nilai B \n');
+	}
+
+	var $hai =5;
+	if ($hai == 10) {
+		document.write('Hai Apa Kabar');
+	}else{
+		document.write('X tidak sama dengan 10');
+	}
+
+
+	var $buah = "mangga";
+	switch($buah){
+		case "apel":
+		document.write('casenya adalah apel');
+		break;
+
+		case "mangga":
+		document.write('casenya adalah mangga');
+		break;
+	}
+
+	for (var $i = 1; $i <= 10; $i++) {
+		document.write($i);
+	}
+
+	var $u =1;
+	while($u <= 5){
+		document.write('Nomor ke : '+$u+'<br>');
+		$u++;
+	}
+
+	document.write('<br>');
+
+
+	function tes(){
+		document.write("hello World");
+	}
+
+	tes();
+
+	document.write('<br>');
+
+	function kalikan(x,y){
+		z= x * y;
+		document.write('Hasil dari '+x+' dikali '+y+' = '+z);
+	}
+
+	kalikan(10,9);
+	
+	document.write('<br>');
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
