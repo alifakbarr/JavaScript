@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menghitung Kata</title>
+</head>
+<body>
+
+<form name="wordcount">
+	<textarea rows="10" cols="20" name="wordcount2" wrap="virtual"></textarea><br>
+	<input type="button" value="hitung" onclick="hitung()">
+	<input type="text" name="wordcount3" size="10">
+</form>
+
+<script>
+	function hitung() {
+		var formcontent = document.wordcount.wordcount2.value;
+		isi = formcontent.split(" ");
+
+		document.wordcount.wordcount3.value = isi.length;
+	}
+</script>
+</body>
+</html>
