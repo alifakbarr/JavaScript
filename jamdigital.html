@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jam Digital</title>
+</head>
+<body>
+<form name="Tick">
+	<input type="text" name="clock" size="12">
+</form>
+
+<script type="text/javascript">
+	function show() {
+		var digital = new Date();
+		var hours = digital.getHours();
+		var minutes = digital.getMinutes();
+		var seconds = digital.getSeconds();
+
+		var dn ="AM";
+		if (hours>12) {
+			dn ="PM";
+			hours =hours-12;
+		}
+		if (hours==0) {
+			hours=12
+		}
+		if (minutes <=9) {
+			minutes = "0"+minutes;
+		}
+		if (seconds<=9) {
+			seconds = "0"+seconds;
+		}
+		document.Tick.clock.value=hours+":"+minutes+":"+seconds+" "+dn;
+		setTimesOut("show()",1000);
+	}
+	show();
+</script>
+</body>
+</html>

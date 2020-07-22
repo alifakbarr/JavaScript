@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Timer</title>
+</head>
+<body>
+<input type="text" id="timer" size="12">
+<input type="button" value="Start" onclick="count()">	
+
+<script type="text/javascript">
+	
+	var c = 0;
+	document.getElementById("timer").value ="";
+	function count() {
+	document.getElementById("timer").value = c;
+	c = c+1;
+	// milidetik dari 1 detik adalah 1000
+	setTimeout("count()",1);
+
+}
+</script>
+</body>
+</html>
