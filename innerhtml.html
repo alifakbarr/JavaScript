@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inner Html</title>
+</head>
+<body>
+<script type="text/javascript">
+	function lihatisi() {
+			isi = document.getElementById("kepala").innerHTML;
+			alert(isi);
+	}
+	function tukarisi(){
+		document.getElementById("kepala").innerHTML = "tulisan ini diganti";
+	}
+</script>
+<h1 id="kepala">Selamat Datang User!</h1>
+<input type="button" onclick="lihatisi()" value="Lihat Isi H1">
+<input type="button" onclick="tukarisi()" value="Tukar Isi H1">
+</body>
+</html>
