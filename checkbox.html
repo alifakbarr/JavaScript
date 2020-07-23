@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CheckBox</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function check() {
+			document.getElementById("mycheck").checked=true;
+		}
+		function uncheck(){
+			document.getElementById("mycheck").checked=false;
+		}
+	</script>
+	<form>
+		<input type="checkBox" id="mycheck">
+		<input type="button" onclick="check()" value="cek">
+		<input type="button" onclick="uncheck()" value="uncheck">		
+	</form>
+</body>
+</html>

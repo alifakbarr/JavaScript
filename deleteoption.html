@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Delete Option dari dropdown list</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		function removeoption() {
+			var x=document.getElementById("myselect");
+			x.remove(x.selectedIndex);
+		}
+	</script>
+
+<form>
+	<select id="myselect">
+		<option>Apple</option>
+		<option>Pear</option>
+		<option>Banana</option>
+	</select>
+
+	<input type="button" onclick="removeoption()" value="Remove Option">
+</form>
+</body>
+</html>
