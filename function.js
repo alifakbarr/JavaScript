@@ -1,14 +1,7 @@
 function jumlahvolumeduakubus(a,b){
-	var volumeA;
-	var volumeB;
-	var total;
 
-	volumeA = a*a*a;
-	volumeB = b*b*b;
-
-	total =(volumeA+volumeB);
-
-	return total;
+// pow adalah pemangkatan
+	return Math.pow(a,3) + Math.pow(b,3);
 }
 
-console.log(jumlahvolumeduakubus(8,3));
+alert(jumlahvolumeduakubus(8,3));
